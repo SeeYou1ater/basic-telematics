@@ -6,8 +6,8 @@ const scss = require('gulp-sass')(require('sass'));
 
 function styles() {
     return src('app/scss/style.scss')
-        .pipe(scss())
-        .pipe(dest('css/style.min.css'))
+        .pipe(scss({ outputStyle: 'compressed' }))
+        .pipe(dest('dist/css/style.min.css'))
 };
 
 
