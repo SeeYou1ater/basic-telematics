@@ -5,13 +5,21 @@ a {
   display: inline-block;
 }
 
-body {
+/*body {
   font-family: "Oswald", sans-serif;
   font-size: 18px;
   line-height: 147%;
   font-weight: 300;
   color: #2C2B2B;
+}*/
+
+body {
+    font-family: 'Segoe UI';
+    src: url('/app/fonts/Segoe\ UI.ttf'), url('/app/fonts/Segoe\ UI\ Bold.ttf'), url('/app/fonts/Segoe\ UI\ Bold\ Italic.ttf'), url('/app/fonts/Segoe\ UI\ Italic.ttf');
+    font-weight: normal;
+    font-style: normal;
 }
+
 
 .social {
   display: -webkit-box;
@@ -20,6 +28,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.logo__img {
+  background-image: src("../images/logo-telematics.png");
+  background-size: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .social__link {
   margin: 0px 5px;
@@ -53,15 +68,19 @@ body {
   text-transform: uppercase;
 }
 .header__subtitle {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 148%;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 .header__text {
   max-width: 800px;
   margin-bottom: 30px;
+  font-size: 24px;
+}
+.header__text p {
+  margin-bottom: 7px;
 }
 .header__images {
   position: absolute;
@@ -85,6 +104,7 @@ body {
 }
 
 .button {
+  margin-top: 25px;
   border: 1px solid #000;
   font-size: 14px;
   line-height: 148%;
