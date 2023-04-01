@@ -29,7 +29,16 @@ body {
   	font-weight: 400;
 }
 
-.social{
+.navbar__menu {
+	display: flex;
+	text-transform: uppercase;
+}
+
+.navbar__menu-li:not(:last-child) {
+	margin-right: 80px;
+}
+
+.social {
 	display: flex;
 	align-items: center;
 	&__link{
@@ -77,12 +86,6 @@ body {
 	max-width: 1220px;
 	margin: 0 auto;
 	padding: 0px 10px;
-}
-
-.phone {
-	font-weight: 400;
-	font-size: 36px;
-	line-height: 147%;
 }
 .button {
 	border: 1px solid #000;
