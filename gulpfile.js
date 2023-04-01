@@ -2,12 +2,14 @@ const {src, dest} = require('gulp');
 
 
 const scss = require('gulp-sass')(require('sass'));
+const concat = require('gulp-concat');
 
 
 function styles() {
     return src('app/scss/style.scss')
         .pipe(scss({ outputStyle: 'compressed' }))
-        .pipe(dest('dist/css/style.min.css'))
+        .pipe(concat('style.min.css'))
+        .pipe(dest('css/'))
 };
 
 
