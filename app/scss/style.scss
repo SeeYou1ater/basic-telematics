@@ -95,6 +95,7 @@ body {
 	padding: 14px 54px 15px;
 	background-color: #FFA07A;
 	transition: all 0.3s;
+	color: #ffffff;
 	&:hover{
 		color: #000;
 		background-color: #fff;
@@ -103,7 +104,7 @@ body {
 }
 /*------------SERVICES--------------*/
 .services {
-	padding-top: 350px;
+	margin-top: 100px;
 	&__inner {
 		display: flex;
 		margin-bottom: 100px;
@@ -187,30 +188,9 @@ body {
 	margin-bottom: 50px;
 }
 
-.button--decor {
-	margin-top: -7px;
-	color: #fff;
-	position: relative;
-	border: 1px solid #fff;
-	&::after {
-		position: absolute;
-		content: 'ЖМИ';
-		color: #C4C4C4;
-		margin-left: 130px;
-	}
-	&::before {
-		content:'';
-		position: absolute;
-		background-color: #C4C4C4;
-		width: 80px;
-		height: 2px;
-		right: -65px;
-		top: 24px;
-	}
-}
 /*----------------BENEFITS------------------*/
 .benefits {
-	margin-bottom: 100px;
+	margin-top: 130px;
 	&__inner {
 		display: flex;
 		margin-bottom: 100px;
