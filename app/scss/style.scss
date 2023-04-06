@@ -27,6 +27,8 @@ body {
 	src: url('/app/fonts/Segoe\ UI.ttf');
 	font-style: normal;
   	font-weight: 400;
+	background-color: #151515;
+	color: #ffffff;
 }
 
 .navbar__menu {
@@ -49,7 +51,6 @@ body {
 .header {
 	background: url('../images/header-bg.jpg') no-repeat top center / cover;
 	min-height: 700px;
-	color: #ffffff;
 	&__top {
 		padding: 47px 0px 45px;
 		display: flex;
@@ -97,24 +98,24 @@ body {
 	transition: all 0.3s;
 	color: #ffffff;
 	&:hover{
-		color: #000;
-		background-color: #fff;
-		border: 1px solid #000;	
+		color: #000000;
+		background-color: #ffffff;
+		border: 1px solid #000000;	
 	}
 }
 /*------------SERVICES--------------*/
 .services {
-	margin-top: 100px;
+	.title {
+		padding-top: 100px;
+	}
 	&__inner {
 		display: flex;
-		margin-bottom: 100px;
 	}
 	&__content {
 		width: 505px;
 		margin-right: 96px;
 	}
 	&__content-title {
-		color: #000;;
 		font-size: 18px;
 		line-height: 147%;
 		font-weight: 300;
@@ -132,55 +133,39 @@ body {
 	}
 	&__item {
 		counter-increment: my-counter;
-		border: 1px solid #C4C4C4;
-		margin-bottom: 12px;
+		border: 1px solid #ffffff;
 		width: 450px;
-		padding: 10px 15px 10px 113px;
+		padding: 20px 20px 20px 83px;
 		position: relative;
 		transition: all 0.4s;
 		&::before {
 			content:'0' counter(my-counter);
 			position: absolute;
 			left: 20px;
-			color: #C4C4C4;
+			color: #ffffff;
 			font-weight: 400;
-			line-height: 147%;
 			font-size: 36px;
 			transform: rotate(-90deg);
 			transition: all 0.4s;		
 		}
 		&:hover {
-			border: 1px solid #000;;
-			width: 500px;
-		}
-		&:hover .services__item-title{
-			color: #000;;
-		}
-		&:hover::before{
-			color: #000;;
+			width: 110%;
 		}
 	}
+	&__item:not(:last-child) {
+		margin-bottom: 12px;
+	}
 	&__item-title {
-		font-size: 24px;
+		font-size: 20px;
 		font-weight: 300;
 	}
 	&__item-text {
-		font-size: 18px;
+		font-size: 16px;
 	}
 }
 
 .title {
 	position: relative;
-	&::after{
-		content:'';
-		width: 80px;
-		height: 3px;
-		background-color: #000;;
-		position: absolute;
-		top: 20px;
-		margin-left: 20px;
-	}
-	color: #000;;
 	font-size: 36px;
 	line-height: 147%;
 	font-weight: 400;
@@ -190,7 +175,7 @@ body {
 
 /*----------------BENEFITS------------------*/
 .benefits {
-	margin-top: 130px;
+	padding-top: 130px;
 	&__inner {
 		display: flex;
 		margin-bottom: 100px;
@@ -200,13 +185,13 @@ body {
 	}
 	&__content {
 		width: 100%;
-		color: #fff;
+		color: #ffffff;
 	}
 	&__title {
 		margin-left: 185px;
 	}
 	&__list {
-		background-color: #000;;
+		background-color: #000000;
 		padding: 25px 0px 25px 185px;
 	}
 	&__item {
@@ -223,7 +208,7 @@ body {
 		line-height: 147%;
 	}
 	&__item-text {
-		color: #C4C4C4;
+		color: #ffffff;
 	}
 }
 /*-----------------CAROUSEL----------------*/
@@ -233,19 +218,20 @@ body {
 		margin: 0px -7px;
 	}
 	&__item-box {
-		border: 1px solid #C4C4C4;
+		border: 1px solid #353535;
+		border-radius: 5px;
+		background-color: #202020;
 		padding: 6px 6px 16px 6px;
 		margin: 0px 7px;
 		text-align: center;
 		transition: all 0.4s;
 		&:hover{
-			background-color: #000;;
-			color: #fff;
-			border-color: #000;;
-
+			background-color: #FFA07A;
+			color: #000000;
 		}
 	}
 	&__item-img {
+		border-radius: 5px;
 		max-width: 100%;
 		margin-bottom: 20px;
 	}
@@ -265,11 +251,11 @@ body {
 			margin: 0px 10px;
 			width: 50px;
 			height: 2px;
-			background-color: #C4C4C4;
+			background-color: #ffffff;
 		}
 		.slick-active {
 			button {
-				background-color: #000;;
+				background-color: #FFA07A;
 				height: 3px;
 			}	
 		}
@@ -277,70 +263,75 @@ body {
 }
 /*--------------CONTACTS-------------*/
 .contacts {
+	margin-bottom: 20px;
+	&__inner {
+		display: flex;
+		justify-content: space-evenly;
+	}
 	&__item {
 		margin-bottom: 20px;
 	}
-	&__item-title {
-		color: #000;
-	}
 	&__title {
-		margin-bottom: 16px;
-		margin-left: 53px;
-		text-align: left;
-		color: #fff;
+		margin-bottom: 30px;
+		text-align: center;
+		color: #ffffff;
 		&::after{
-			background-color: #fff;
+			background-color: #ffffff;
 		}
 	}
 	&__input {
-		background-color: transparent;
-		width: 450px;
-		height: 75px;
-		border: 1px solid #000;;
+		border: 3px solid;
+		border-radius: 25px;
+		background-color: #303030;
+		width: 400px;
+		height: 65px;
 		text-align: center;
-		margin-bottom: 12px;
+		margin-bottom: 15px;
 		display: block;
-		color: #fff;
+		color: #ffffff;
 		font-size: 24px;
-		padding: 0px 15px;
+		padding: 0px 15px 5px;
 		font-weight: 300;
+		outline: none;
 		&::placeholder {
 			font-size: 18px;
-			line-height: 147%;
-			color: #C4C4C4;
-			font-family: 'Oswald', sans-serif;
+			color: #ffffff;
 			font-weight: 300;
 		}
 
 	}
+	&__input:focus {
+		border-color: #FFA07A;
+	}
+	&__input:focus {
+		border-color: #FFA07A;
+	}
 	&__btn {
-		color: #fff;
+		color: #ffffff;
 		border: none;
 		font-weight: 300;
-		margin-top: 78px;
+		margin-top: 30px;
 		cursor: pointer;
-		border: 1px solid #000;
-	}
-}
-.contacts {
-	&__inner {
-		display: flex;
-		justify-content: space-between;
+		border: 1px solid #000000;
 	}
 }
 .contact-form {
-	background-color: #000;
-	padding: 50px 75px 57px;
+	border: 1px solid #353535;
+	border-radius: 10px;
+	background-color: #202020;
+	padding: 50px 55px 57px;
 	text-align: center;
+}
+.contact-form:hover {
+	border-color: #FFA07A;
 }
 /*------------------FOOTER------------------*/
 .footer {
-	background-color: #000;
 	&__inner {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		color: #fff;
+		color: #ffffff;
 		font-weight: 300;
 	}
 }
