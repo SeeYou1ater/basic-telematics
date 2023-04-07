@@ -37,7 +37,7 @@ body {
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-bottom: 50px;
-	text-shadow: 3px 3px 5px black, 0 0 0.6em #cc7451;
+	text-shadow: 3px 3px 10px black, 0 0 0.6em #cc7451;
 }
 
 .navbar__menu {
@@ -118,6 +118,7 @@ body {
 .services {
 	margin-top: 80px;
 	.title {
+		margin-left: 38px;
 		position: relative;
 		&::before {
 			content: url('../images/icons/sputnik100.png');
@@ -198,7 +199,17 @@ body {
 		color: #ffffff;
 	}
 	&__title {
-		margin-left: 185px;
+		position: relative;
+		margin-left: 100px;
+		&::before {
+			content: url('../images/icons/questions.png');
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			left: -38px;
+			top: -26px;
+			z-index: -1;
+		}
 	}
 	&__list {
 		background-color: #202020;
