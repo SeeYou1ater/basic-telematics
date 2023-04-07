@@ -27,7 +27,7 @@ body {
 	src: url('/app/fonts/Segoe\ UI.ttf');
 	font-style: normal;
   	font-weight: 400;
-	background-color: #151515;
+	background-color: #101010;
 	color: #ffffff;
 }
 
@@ -98,12 +98,13 @@ body {
 	padding: 0px 10px;
 }
 .button {
-	border: 1px solid #FFA07A;
+	border: 1px solid #cc7451;
 	font-size: 14px;
+	font-weight: 700;
 	line-height: 148%;
 	text-transform: uppercase;
 	padding: 14px 54px 15px;
-	background-color: #FFA07A;
+	background-color: #cc7451;
 	transition: all 0.3s;
 	color: #ffffff;
 	&:hover{
@@ -226,7 +227,7 @@ body {
 		text-align: center;
 		transition: all 0.4s;
 		&:hover{
-			background-color: #FFA07A;
+			background-color: #cc7451;
 			color: #000000;
 		}
 	}
@@ -255,7 +256,7 @@ body {
 		}
 		.slick-active {
 			button {
-				background-color: #FFA07A;
+				background-color: #cc7451;
 				height: 3px;
 			}	
 		}
@@ -307,10 +308,10 @@ body {
 
 	}
 	&__input:focus {
-		border-color: #FFA07A;
+		border-color: #cc7451;
 	}
 	&__input:focus {
-		border-color: #FFA07A;
+		border-color: #cc7451;
 	}
 	&__btn {
 		color: #ffffff;
@@ -322,10 +323,11 @@ body {
 	}
 }
 .contact-form:hover {
-	border-color: #FFA07A;
+	border-color: #cc7451;
 }
 /*------------------FOOTER------------------*/
 .footer {
+	background-color: #050505;
 	&__inner {
 		display: flex;
 		justify-content: space-between;
@@ -334,6 +336,8 @@ body {
 		font-weight: 300;
 	}
 }
+
+
 /*---------------MEDIA--------------*/
 @media (max-width: 1140px){
 	.services__item:hover {
