@@ -24,7 +24,6 @@ a {
 body {
 	font-family: 'Segoe UI';
 	font-size: 20px;
-	src: url('/app/fonts/Segoe\ UI.ttf');
 	font-style: normal;
   	font-weight: 400;
 	background-color: #101010;
@@ -33,11 +32,12 @@ body {
 
 .title {
 	position: relative;
-	font-size: 32px;
+	font-size: 30px;
 	line-height: 147%;
-	font-weight: 400;
+	font-weight: 700;
 	text-transform: uppercase;
 	margin-bottom: 50px;
+	text-shadow: 3px 3px 5px black, 0 0 0.6em #cc7451;
 }
 
 .navbar__menu {
@@ -116,8 +116,16 @@ body {
 }
 /*------------SERVICES--------------*/
 .services {
+	margin-top: 80px;
 	.title {
-		padding-top: 100px;
+		position: relative;
+		&::before {
+			content: url('../images/icons/sputnik100.png');
+			position: absolute;
+			left: -38px;
+			top: -26px;
+			z-index: -1;
+		}
 	}
 	&__inner {
 		display: flex;
