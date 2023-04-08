@@ -31,7 +31,7 @@ body {
 }
 
 .title {
-	min-width: min-content;
+	display: inline-block;
 	position: relative;
 	font-size: 30px;
 	line-height: 147%;
@@ -159,7 +159,7 @@ body {
 	&__item {
 		counter-increment: my-counter;
 		border: 1px solid #ffffff;
-		width: 450px;
+		width: 480px;
 		padding: 20px 20px 20px 83px;
 		position: relative;
 		transition: all 0.4s;
