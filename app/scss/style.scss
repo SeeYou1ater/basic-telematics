@@ -379,8 +379,8 @@ body {
 
 /*---------------MEDIA--------------*/
 @media (max-width: 1140px){
-	.services__item:hover {
-		width: 450px;
+	.services__item {
+		pointer-events: none;
 	}
 }
 
