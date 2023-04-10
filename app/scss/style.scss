@@ -104,9 +104,9 @@ body {
 	}
 }
 .container {
-	max-width: 1220px;
+	max-width: 1280px;
 	margin: 0 auto;
-	padding: 0px 10px;
+	padding: 0px 40px;
 }
 .button {
 	border: 1px solid #cc7451;
@@ -241,7 +241,7 @@ body {
 			height: 50px;
 			position: absolute;
 			left: -38px;
-			top: -26px;
+			top: -31px;
 			z-index: -1;
 		}
 	}
@@ -458,6 +458,9 @@ body {
 	.contacts__list {
 		margin-bottom: 30px;
 	}
+	.contact-form {
+		display: inline-block;
+	}
 	.contacts__input {
 		width: 100%;
 	}
@@ -478,7 +481,6 @@ body {
 		justify-content: center;
 	}
 	.logo {
-		padding: 0 40px;
 		display: inline-block;
 		margin-top: 5px;
 		margin-bottom: 5px;
@@ -497,6 +499,9 @@ body {
 }
 
 @media (max-width: 600px){
+	.container {
+		padding: 0 10px;
+	}
 	.header__content {
 		padding-top: 0;
 		text-align: center;
@@ -508,9 +513,7 @@ body {
 	.social {
 		justify-content: center;
 	}
-	.logo {
-		padding: 0px 40px;
-	}
+	
 	.header__images {
 		position: static;
 		width: 80%;
@@ -527,25 +530,23 @@ body {
 	.services__item::before {
 		left: 10px;
 	}
-	.title {
-		margin-bottom: 30px;
-		text-align: center;
-	}
-	.title::after {
-		display: none;
-	}
 	.benefits__inner {
 		text-align: center;
 	}
 	.benefits__title {
-		margin: -20px 0px 20px 0px;
-		font-size: 36px;
+		font-size: 30px;
 	}
 	.benefits__list {
 		padding: 25px 15px;
 	}
 	.benefits__item {
 		width: 100%;
+	}
+	.carousel-title__inner {
+		text-align: center;
+	}
+	.carousel__title {
+		font-size: 30px;
 	}
 	.carousel__item-img {
 		width: 100%;
@@ -597,12 +598,30 @@ body {
 	}
 }
 
+@media (max-width: 416px){
+	.header__top {
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+	}
+	.logo {
+		margin-bottom: 15px;
+	}
+	.phone {
+		margin-top: 10px;
+	}
+	.header__title {
+		margin-top: -20px;
+	}
+}
+
 @media (max-width: 390px){
 	.header__title {
 		font-size: 32px;
 		margin-bottom: 10px;
 	}
 }
+
 @media (max-width: 349px){
 	.header__top {
 		padding: 40px 0px 40px 0px;
@@ -621,21 +640,13 @@ body {
 	}	
 }
 
-
-@media (max-width: 416px){
-	.header__top {
-		flex-wrap: wrap;
-		justify-content: center;
-		text-align: center;
-	}
-	.logo {
-		margin-bottom: 15px;
-	}
-	.phone {
-		margin-top: 10px;
-	}
+@media (max-width: 320px){
 	.header__title {
-		margin-top: -20px;
+		font-size: 32px;
+		margin-bottom: 10px;
+	}
+	.contact-form__title {
+		font-size: 26px;
 	}
 }
 
