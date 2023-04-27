@@ -248,10 +248,10 @@ body {
 	&__inner {
 		margin: 0px -7px;
 	}
-	&__item-box {
-		border-radius: 10px;
+	&__item-box {	
+		border-radius: 5px;
 		background-color: #202020;
-		padding: 8px 8px 16px 8px;
+		padding: 5px 5px 20px;
 		margin: 0px 7px;
 		text-align: center;
 		transition: all 0.4s;
@@ -261,9 +261,8 @@ body {
 		}
 	}
 	&__item-img {
-		border-radius: 10px;
-		max-width: 100%;
-		margin-bottom: 20px;
+		margin: 0 auto 20px;
+		width: 100%;
 	}
 	&__item-title {
 		text-transform: uppercase;
